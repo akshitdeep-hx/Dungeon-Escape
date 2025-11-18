@@ -1,7 +1,7 @@
 # Dungeon-Escape
 Dungeon Escape is a user interactive game that i made  as my c project.
 
-Concept Demonstrated
+Concept Demonstrated\n
 -->Functions
 -->Loops
 -->Basic input/output
@@ -10,8 +10,8 @@ Concept Demonstrated
 -->Structures
 -->File Handling
 
-Features
---> Randomly Generated Dungeon
+Features\n
+--> single patterned Generated Dungeon
 --> Player movement
     The player moves using W/A/S/D keys.
 --> Player System
@@ -34,12 +34,12 @@ Features
      Exit
 --> Save & Load Game
 
-Compilation and Execution
+Compilation and Execution\n
 -->Open the directory 
 --> Run code --> gcc src/* -I include -o Dungeon-Escape
 --> Execute -->  Dungeon-Escape.exe
 
-Directory Structures
+Directory Structures\n
 -->src/
     All source code logic
 -->include/
