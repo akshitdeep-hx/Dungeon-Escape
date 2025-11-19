@@ -26,8 +26,8 @@ void startNewGame(){
         }
 
         movePlayer(&p, maze, move);
-        char title = maze[p.y][p.x];
-        int result = checkCollision(&p, title);
+        char tile = maze[p.y][p.x];
+        int result = checkCollision(&p, tile);
 
         if(result ==  1){
             printf("\n You Escaped the Dungeon!\n");
@@ -65,8 +65,8 @@ void loadGame(){
 
         movePlayer(&p,maze,move);
 
-        char title = maze[p.y][p.y];
-        int result = checkCollision(&p,title);
+        char tile = maze[p.y][p.y];
+        int result = checkCollision(&p,tile);
 
         if(result == 1){
            printf("\nYou Escaped the Dungeon!\n");
