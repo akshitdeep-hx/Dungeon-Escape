@@ -12,4 +12,5 @@ typedef struct {
 void inItPlayer(Player *p);
 void movePlayer(Player *p, char maze[][WIDTH], char input);
 void checkCollision(Player *p, char tile);
+
 #endif

@@ -1,0 +1,67 @@
+----------------------------------------------------
+PROJECT REPORT
+----------------------------------------------------
+Course Code: CSEG1032
+Course Title: Programming in C
+Project Title: Dungeon Escape
+Student Name: Akshitdeep Rawat
+Roll No: 590025464
+Semester : 1st
+----------------------------------------------------
+
+1. Abstract
+This project implements a user based game,in which the user chooses the right path to 
+escape the dungeon dodging traps and monsters.While reading user input to save and load game
+It demostrates the use of structures, file handling and modular programming to build a scalabe
+and maintainable software system.
+
+----------------------------------------------------
+
+2.Objectives
+- Use of modular and structured programming 
+- Demonstrate the use of user defined header files
+- Implement random maze generation
+- Use structures for player data
+- Display the maze dynamically in the console 
+- Use I/O for saving and loading data.
+ 
+ ----------------------------------------------------
+
+ 3.Problem Definition
+ - A maze is generated
+ - The player starts at position(1,1)
+ - The exit is located at bottom right of the maze
+ - The maze has traps and monsters
+ - player can be moved using w\a\s\d
+ - The game ends when:
+ The player exits the maze.
+ The player health becomes zero.
+ ----------------------------------------------------
+
+ 4.System Design and Algorithm
+The system is modular consisting of sourcce file:
+- "Fileio.c" controls and file saving and loading
+- "game.c" checks for win/lose conditon and player movement
+- "main.c" shows main menu to either load or save
+- "maze.c" generates random maze 
+- "player.c" handles movement checks for collision 
+
+Algorithm:
+
+1. Display menu
+2. choose to load or start new game
+3. generates maze
+4. read movement
+5. checks for traps or monster/collision
+6. update health 
+7. checks exit
+8. saves player data to an open file
+
+Each module uses header file for funcation and strucutes.
+
+----------------------------------------------------
+5. Implementation Details
+key language Features used :
+- Structures - to represent health and updates
+- File handling - to store save data and load saved data
+- Funcations - for modularity and clarity
