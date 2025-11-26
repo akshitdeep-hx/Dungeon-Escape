@@ -13,11 +13,11 @@ Concept Demonstrated<br>
 Features<br>
 --> single patterned Generated Dungeon<br>
 --> Player movement<br>
-    The player moves using W/A/S/D keys.
+    The player moves using W/A/S/D keys.<br>
 --> Player System<br>
-    The player has:
-     position x,y
-     movement is blocked by walls.
+    The player has:<br>
+     position x,y<br>
+     movement is blocked by walls.<br>
 --> Hazards and Obstacles<br>
      walls(#)<br>
      Path(.)<br>
@@ -33,10 +33,10 @@ Compilation and Execution<br>
 
 Directory Structures<br>
 -->src/<br>
-    All source code logic
+    All source code logic<br>
 -->include/<br>
-    All headers with Function Declarations and Constants
+    All headers with Function Declarations and Constants<br>
 -->docs/<br>
-    Final report
+    Final report<br>
 -->ReadMe.md<br>
 
