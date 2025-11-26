@@ -1,51 +1,42 @@
 # Dungeon-Escape
 Dungeon Escape is a user interactive game that i made  as my c project.
 
-Concept Demonstrated
---> Functions
---> Loops
---> Basic input/output
---> Array
---> Variables and Data types
---> Structures
---> File Handling
---> Pointers
+Concept Demonstrated<br>
+--> Functions<br>
+--> Loops<br>
+--> Basic input/output<br>
+--> Array<br>
+--> Variables and Data types<br>
 
-Features
---> single patterned Generated Dungeon
---> Player movement
+
+
+Features<br>
+--> single patterned Generated Dungeon<br>
+--> Player movement<br>
     The player moves using W/A/S/D keys.
---> Player System
+--> Player System<br>
     The player has:
      position x,y
-     Health starts at 100
-     movement is blocked by hazards and walls.
---> Hazards and Obstacles
-     walls(#)
-     Traps(T)
-     Monsters(M)
-     Path(.)
-     Exit(E)
---> Win & Lose conditions
-     Reach E--> You escape
-     Health(0)-->Game Over
---> Load Menu
-     Start new game
-     Load game
-     Exit
---> Save & Load Game
+     movement is blocked by walls.
+--> Hazards and Obstacles<br>
+     walls(#)<br>
+     Path(.)<br>
+     Exit(E)<br>
+--> Win & Lose conditions<br>
+     Reach E--> You escape<br>
 
-Compilation and Execution
---> Open the directory 
---> Run code --> gcc src/* -I include -o Dungeon-Escape
---> Execute -->  Dungeon-Escape.exe
+Compilation and Execution<br>
+--> Open the directory <br>
+--> Run code --> gcc src/* -I include -o Dungeon-Escape<br>
+--> Execute -->  Dungeon-Escape.exe<br>
+    or create a makefile that executes the code<br>
 
-Directory Structures
--->src/
+Directory Structures<br>
+-->src/<br>
     All source code logic
--->include/
+-->include/<br>
     All headers with Function Declarations and Constants
--->docs/
+-->docs/<br>
     Final report
--->ReadMe.md
+-->ReadMe.md<br>
 

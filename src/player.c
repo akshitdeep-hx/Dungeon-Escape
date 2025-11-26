@@ -1,47 +1,24 @@
-#include<stdio.h>
-#include "player.h"
-#include "maze.h"
+#include "../include/maze.h"
+#include "../include/player.h"
 
-void inItPlayer(Player *p){
-    p -> x = 1;
-    p -> y = 1;
-    p -> health = 100;
-}
+int playerX = 1;
+int playerY = 1;
 
-void movePlayer(Player *p, char maze[][WIDTH], char input){
-    int newX = p -> x;
-    int newY = p -> y;
+void movePlayer(char input){
+    int newX = playerX;
+    int newY = playerY;
 
+     if(input == 'w')newY--;
+    else if(input == 's')newY++;
+    else if(input == 'a')newX--;
+    else if(input == 'd')newX++;
+    char nextTile = dungeon[newY][newX];
 
-    if(input == 'w'){
-        newY--;
-    }
-    else if(input == 's'){
-        newY++;
-    }
-    else if(input == 'a'){
-        newX--;
-    }
-    else if(input == 'd'){
-        newX++;
-    }
-    if(maze[newX][newY]){
-        p -> x = newX;
-        p -> y = newX;
-    }
-}
+     if(nextTile == '.' || nextTile == 'X'){
+        dungeon[playerY][playerX] = '.';
+        playerX = newX;
+        playerY = newY;
+        dungeon[playerY][playerX] = 'p';
+     }
 
-int checkCollision(Player *p, char tile){
-    if(title == 'T'){
-        p -> health -= 10;
-        printf("You Stepped on a trap Health Depleted:%d\n", p ->health);
-    }
-    else if(tile == 'M'){
-        p -> health -= 25;
-        printf("\n A monster damaged you!Health: %d\n", p->health);
-    }
-    else if(tile == 'E'){
-           return 1;
-    }
-    return 0;
 }

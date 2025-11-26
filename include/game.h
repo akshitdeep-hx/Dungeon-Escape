@@ -2,7 +2,7 @@
 
 #define GAME_H
 
-void startNewGame();
-void loadGame();
+int checkWin();
+
 
 #endif

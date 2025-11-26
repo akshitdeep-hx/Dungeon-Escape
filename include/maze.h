@@ -1,12 +1,10 @@
 #ifndef MAZE_H
 #define MAZE_H
 
-#define WIDTH 30
-#define HEIGHT 15
+#define ROWS 7
+#define COLS 15
 
-typedef struct Player Player;
-
-void generateMaze(char maze[HEIGHT][WIDTH]);
-void displayMaze(char maze[HEIGHT][WIDTH], Player p);
+extern char dungeon[ROWS][COLS];
+void printDungeon();
 
 #endif
