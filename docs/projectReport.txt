@@ -11,19 +11,17 @@ Semester : 1st
 
 1. Abstract
 This project implements a user based game,in which the user chooses the right path to 
-escape the dungeon dodging traps and monsters.While reading user input to save and load game
-It demostrates the use of structures, file handling and modular programming to build a scalabe
-and maintainable software system.
+escape the dungeon.While reading user input .It demostrates the use of  modular programming 
+to build a scalabe and maintainable software system.
 
 ----------------------------------------------------
 
 2.Objectives
 - Use of modular and structured programming 
 - Demonstrate the use of user defined header files
-- Implement random maze generation
-- Use structures for player data
-- Display the maze dynamically in the console 
-- Use I/O for saving and loading data.
+- Implement maze generation
+- Display the maze vertically in the console 
+- Use I/O .
  
  ----------------------------------------------------
 
@@ -31,37 +29,30 @@ and maintainable software system.
  - A maze is generated
  - The player starts at position(1,1)
  - The exit is located at bottom right of the maze
- - The maze has traps and monsters
  - player can be moved using w\a\s\d
  - The game ends when:
  The player exits the maze.
- The player health becomes zero.
+ 
  ----------------------------------------------------
 
  4.System Design and Algorithm
 The system is modular consisting of sourcce file:
-- "Fileio.c" controls and file saving and loading
-- "game.c" checks for win/lose conditon and player movement
-- "main.c" shows main menu to either load or save
-- "maze.c" generates random maze 
+- "game.c" checks for win conditon and player movement
+- "main.c" shows main 
+- "maze.c" generates  maze 
 - "player.c" handles movement checks for collision 
 
 Algorithm:
 
-1. Display menu
-2. choose to load or start new game
-3. generates maze
-4. read movement
-5. checks for traps or monster/collision
-6. update health 
-7. checks exit
-8. saves player data to an open file
+1. generates maze
+2. read movement
+3. checks for collision
+4. checks exit
 
-Each module uses header file for funcation and strucutes.
+Each module uses header file funcation.
 
 ----------------------------------------------------
 5. Implementation Details
 key language Features used :
-- Structures - to represent health and updates
-- File handling - to store save data and load saved data
+- Data Types - Int, Extern keyword
 - Funcations - for modularity and clarity
