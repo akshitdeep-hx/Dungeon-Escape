@@ -5,19 +5,24 @@
 
 int main(){
     char input;
-
-    while(1){
+    
+    while(scanf(" %c", &input) == 1){
         printDungeon();
-
-        printf("\nMove (w/a/s/d):");
-        scanf(" %c", &input);
-        movePlayer(input);
-
+                                           
+        movePlayer(input);                           
+        // reads moves until checkWin is true
         if(checkWin()){
             printDungeon();
             printf("\n You Escaped the Dungeon!\n");
-            break;
+            return 0;
         }
+    }
+    // if we reach EOF without winning
+    printDungeon();                
+    if(!checkWin()){
+        printf("\n Game Over!\n");
     }
     return 0;
 }
+        
+           

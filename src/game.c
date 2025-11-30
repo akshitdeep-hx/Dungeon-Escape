@@ -1,7 +1,8 @@
 #include "../include/maze.h"
 #include "../include/player.h"
 #include "../include/game.h"
+int gameWon = 0;
 
 int checkWin(){
-    return (dungeon[playerY][playerX] == 'x');
+    return gameWon;   // checks if player is on exit tile
 }

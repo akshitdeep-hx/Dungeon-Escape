@@ -2,7 +2,8 @@
 
 #define GAME_H
 
-int checkWin();
+extern int gameWon;           // global flag set when player reaches exit
 
+int checkWin();
 
 #endif

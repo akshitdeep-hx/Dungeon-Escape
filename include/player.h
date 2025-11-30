@@ -4,6 +4,6 @@
 extern int playerX;
 extern int playerY;
 
-void movePlayer( char input);
+void movePlayer( char input);                      // updates player position based on input
 
 #endif
