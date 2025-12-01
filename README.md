@@ -29,7 +29,7 @@ Features<br>
 Compilation and Execution<br>
 --> Open the directory <br>
 --> Run code --> gcc src/* -I include -o Dungeon-Escape<br>
---> Execute -->  Dungeon-Escape.exe<br>
+--> Execute -->  ./main < sample_input.txt<br>
     or create a makefile that executes the code<br>
 
 Directory Structures<br>
@@ -38,6 +38,6 @@ Directory Structures<br>
 -->include/<br>
     All headers with Function Declarations and Constants<br>
 -->docs/<br>
-    Final report<br>
+    ProjectReport.pdf<br>
 -->ReadMe.md<br>
 
